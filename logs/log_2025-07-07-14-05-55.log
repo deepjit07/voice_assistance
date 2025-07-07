@@ -1,0 +1,252 @@
+[2025-07-07 14:05:55,489] logger - INFO - Initializing SpeechModule.
+[2025-07-07 14:05:55,525] comtypes.client._code_cache - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\deepj\\Downloads\\Voice_Assistant-main (1)\\Voice_Assistant-main\\venv\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+[2025-07-07 14:05:55,525] comtypes.client._code_cache - INFO - Using writeable comtypes cache directory: 'C:\Users\deepj\Downloads\Voice_Assistant-main (1)\Voice_Assistant-main\venv\lib\site-packages\comtypes\gen'
+[2025-07-07 14:05:55,656] logger - INFO - ReminderModule initialized.
+[2025-07-07 14:05:55,661] logger - INFO - Initializing SpeechModule.
+[2025-07-07 14:05:55,663] root - INFO - Starting Flask app on http://127.0.0.1:5006
+[2025-07-07 14:05:55,676] werkzeug - WARNING -  * Debugger is active!
+[2025-07-07 14:05:55,677] werkzeug - INFO -  * Debugger PIN: 262-066-243
+[2025-07-07 14:06:04,858] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:06:04] "GET / HTTP/1.1" 200 -
+[2025-07-07 14:06:04,955] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:06:04] "GET /static/css/styles.css HTTP/1.1" 200 -
+[2025-07-07 14:06:04,967] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:06:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-07-07 14:06:10,096] logger - INFO - Initializing QnAModule.
+[2025-07-07 14:06:10,359] logger - INFO - Groq LLM initialized for QnA module.
+[2025-07-07 14:06:10,359] logger - INFO - Custom prompt initialized for QnA module.
+[2025-07-07 14:06:10,360] logger - INFO - Conversation memory initialized for QnA module.
+[2025-07-07 14:06:10,362] logger - INFO - LLMChain created with memory for QnA module.
+[2025-07-07 14:06:10,385] logger - INFO - MusicModule initialized.
+[2025-07-07 14:06:10,408] logger - INFO - WeatherModule initialized.
+[2025-07-07 14:06:10,408] logger - INFO - Groq API key stored and modules initialized.
+[2025-07-07 14:06:10,408] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:06:10] "[32mPOST / HTTP/1.1[0m" 302 -
+[2025-07-07 14:06:10,414] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:06:10] "GET /assistant HTTP/1.1" 200 -
+[2025-07-07 14:06:10,434] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:06:10] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2025-07-07 14:06:10,434] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:06:10] "GET /static/css/logo.png HTTP/1.1" 200 -
+[2025-07-07 14:06:10,443] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:06:10] "POST /start HTTP/1.1" 200 -
+[2025-07-07 14:06:22,636] logger - INFO - Handling music request: interrupt
+[2025-07-07 14:06:22,636] logger - INFO - No music is currently playing to stop.
+[2025-07-07 14:06:22,636] logger - INFO - Music playback interrupted.
+[2025-07-07 14:06:22,637] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:06:22] "POST /interrupt HTTP/1.1" 200 -
+[2025-07-07 14:06:30,823] logger - INFO - Detecting intent for input: what is the weather today
+[2025-07-07 14:06:31,541] httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-07-07 14:06:31,559] logger - INFO - Handling weather query: what is the weather today
+[2025-07-07 14:06:32,054] httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-07-07 14:06:32,055] logger - INFO - Extracted location: (No location found)
+[2025-07-07 14:06:32,742] logger - WARNING - No weather details found for location: (No location found)
+[2025-07-07 14:06:32,743] logger - INFO - Weather response: Sorry, I couldn't find weather details for '(No location found)'. Please try the same or another location.
+[2025-07-07 14:06:32,743] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:06:32] "POST /process_input HTTP/1.1" 200 -
+[2025-07-07 14:06:46,934] logger - INFO - Handling weather query: what is data science
+[2025-07-07 14:06:47,440] httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-07-07 14:06:47,441] logger - INFO - Extracted location: Location:
+[2025-07-07 14:06:48,060] logger - WARNING - No weather details found for location: Location:
+[2025-07-07 14:06:48,061] logger - INFO - Weather response: Sorry, I couldn't find weather details for 'Location:'. Please try the same or another location.
+[2025-07-07 14:06:48,061] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:06:48] "POST /process_input HTTP/1.1" 200 -
+[2025-07-07 14:07:04,843] logger - INFO - Handling weather query: play a video on YouTube
+[2025-07-07 14:07:05,406] httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-07-07 14:07:05,408] logger - INFO - Extracted location: Location:
+[2025-07-07 14:07:06,001] logger - WARNING - No weather details found for location: Location:
+[2025-07-07 14:07:06,002] logger - INFO - Weather response: Sorry, I couldn't find weather details for 'Location:'. Please try the same or another location.
+[2025-07-07 14:07:06,003] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:07:06] "POST /process_input HTTP/1.1" 200 -
+[2025-07-07 14:08:01,761] logger - INFO - No music is currently playing to stop.
+[2025-07-07 14:08:01,762] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:08:01] "POST /stop HTTP/1.1" 200 -
+[2025-07-07 14:08:06,876] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:08:06] "GET / HTTP/1.1" 200 -
+[2025-07-07 14:08:06,894] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:08:06] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2025-07-07 14:08:11,232] logger - INFO - Initializing QnAModule.
+[2025-07-07 14:08:11,278] logger - INFO - Groq LLM initialized for QnA module.
+[2025-07-07 14:08:11,278] logger - INFO - Custom prompt initialized for QnA module.
+[2025-07-07 14:08:11,279] logger - INFO - Conversation memory initialized for QnA module.
+[2025-07-07 14:08:11,279] logger - INFO - LLMChain created with memory for QnA module.
+[2025-07-07 14:08:11,305] logger - INFO - MusicModule initialized.
+[2025-07-07 14:08:11,333] logger - INFO - WeatherModule initialized.
+[2025-07-07 14:08:11,333] logger - INFO - Groq API key stored and modules initialized.
+[2025-07-07 14:08:11,334] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:08:11] "[32mPOST / HTTP/1.1[0m" 302 -
+[2025-07-07 14:08:11,341] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:08:11] "GET /assistant HTTP/1.1" 200 -
+[2025-07-07 14:08:11,360] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:08:11] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2025-07-07 14:08:11,364] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:08:11] "[36mGET /static/css/logo.png HTTP/1.1[0m" 304 -
+[2025-07-07 14:08:11,367] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:08:11] "POST /start HTTP/1.1" 200 -
+[2025-07-07 14:08:21,075] logger - INFO - Detecting intent for input: you can ask me to set reminder play music questions
+[2025-07-07 14:08:21,736] httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-07-07 14:08:21,738] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:08:21] "POST /process_input HTTP/1.1" 200 -
+[2025-07-07 14:08:38,314] logger - INFO - Detecting intent for input: play a music
+[2025-07-07 14:08:39,021] httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-07-07 14:08:39,024] logger - INFO - Handling music request: play a music
+[2025-07-07 14:08:39,024] logger - INFO - Refining music query for input: play a music
+[2025-07-07 14:08:39,601] httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-07-07 14:08:39,603] logger - INFO - Refined query: Query:
+[2025-07-07 14:08:39,603] logger - INFO - No music is currently playing to stop.
+[2025-07-07 14:08:39,603] logger - INFO - Fetching and attempting to play music for query: Query:
+[2025-07-07 14:08:47,510] logger - INFO - Found music: How to use Microsoft Power Query - URL: https://rr5---sn-npupj5cax-jj0z.googlevideo.com/videoplayback?expire=1751899124&ei=lIdraOvlIsLMssUPvcve4A0&ip=103.70.211.48&id=o-AEw0I0h-4TdXeZ9PTN08Ub1jtSwgi-ZbEF1Wy8_YpZnr&itag=251&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&met=1751877524%2C&mh=mL&mm=31%2C29&mn=sn-npupj5cax-jj0z%2Csn-qxaeenl6&ms=au%2Crdu&mv=m&mvi=5&pl=24&rms=au%2Cau&initcwndbps=1291250&bui=AY1jyLNsrv5hs17LrzVoWRGyAll05epemEFhT00HYN_ghAu_jlCx9aqJFSATAXn0mcoooO1LSCwRlJts&vprv=1&svpuc=1&mime=audio%2Fwebm&ns=Db8SMsWt6Vwr09iptybA7rMQ&rqh=1&gir=yes&clen=16278130&dur=994.201&lmt=1741595934734630&mt=1751877182&fvip=4&keepalive=yes&lmw=1&fexp=51476175&c=TVHTML5&sefc=1&txp=5532534&n=Jg_gN4vGnMUTBg&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cvprv%2Csvpuc%2Cmime%2Cns%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AJfQdSswRgIhANwPzBIPQpdm0nH1QlPS1cgMQWBo7HLIGQmqCNqSqk1EAiEAzmPUJxcZDhDRRpdKbrX5FnhukLJ6DOnfedQb8teNJbw%3D&lsparams=met%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRQIhAL7A1xuzrYPMU5Alros8Qn1_t4Xst113NLuJrRLzr9JtAiARkoKUnI4_6PiJ_4hHshENwvcoEW04a7hStdbs3wGGaQ%3D%3D
+[2025-07-07 14:08:47,510] logger - INFO - No music is currently playing to stop.
+[2025-07-07 14:08:47,644] logger - INFO - Now playing: How to use Microsoft Power Query
+[2025-07-07 14:08:47,646] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:08:47] "POST /process_input HTTP/1.1" 200 -
+[2025-07-07 14:09:04,750] logger - INFO - Stopping the currently playing music.
+[2025-07-07 14:09:04,784] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:09:04] "POST /exit HTTP/1.1" 200 -
+[2025-07-07 14:09:14,397] logger - INFO - Detecting intent for input: can you tell me what is data science
+[2025-07-07 14:09:14,998] httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-07-07 14:09:15,000] logger - INFO - Received user query: can you tell me what is data science
+[2025-07-07 14:09:15,776] httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-07-07 14:09:15,777] logger - INFO - Response generated: I'd be happy to help you understand what data science is!
+
+**What is Data Science?**
+
+Data science is a field that combines statistics, computer science, and domain expertise to extract insights and knowledge from large datasets. It involves using various techniques, such as machine learning, data visualization, and statistical modeling, to uncover patterns, trends, and correlations within data.
+
+Data scientists work with data to answer complex questions, solve problems, and make informed decisions. They use programming languages like Python, R, and SQL to collect, clean, and analyze data, and then communicate their findings to stakeholders through reports, visualizations, and presentations.
+
+**Key Aspects of Data Science:**
+
+1. **Data Collection**: Gathering data from various sources, such as databases, sensors, or surveys.
+2. **Data Cleaning**: Ensuring the data is accurate, complete, and free of errors.
+3. **Data Analysis**: Using statistical and machine learning techniques to uncover insights and patterns.
+4. **Data Visualization**: Presenting complex data in a clear and meaningful way using charts, graphs, and other visualizations.
+5. **Communication**: Sharing findings and insights with stakeholders through reports, presentations, and discussions.
+
+**Applications of Data Science:**
+
+Data science is used in many fields, including:
+
+1. **Business**: To improve customer relationships, optimize operations, and drive revenue growth.
+2. **Healthcare**: To develop personalized medicine, improve patient outcomes, and reduce costs.
+3. **Finance**: To predict market trends, optimize investment portfolios, and detect fraud.
+4. **Environment**: To monitor climate change, track natural disasters, and develop sustainable solutions.
+
+Would you like me to explain any specific aspect of data science in more detail?
+[2025-07-07 14:09:15,777] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:09:15] "POST /process_input HTTP/1.1" 200 -
+[2025-07-07 14:09:21,169] logger - INFO - No music is currently playing to stop.
+[2025-07-07 14:09:21,169] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:09:21] "POST /exit HTTP/1.1" 200 -
+[2025-07-07 14:09:41,752] logger - INFO - No music is currently playing to stop.
+[2025-07-07 14:09:41,753] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:09:41] "POST /exit HTTP/1.1" 200 -
+[2025-07-07 14:09:52,713] logger - INFO - Handling music request: interrupt
+[2025-07-07 14:09:52,713] logger - INFO - No music is currently playing to stop.
+[2025-07-07 14:09:52,713] logger - INFO - Music playback interrupted.
+[2025-07-07 14:09:52,713] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:09:52] "POST /interrupt HTTP/1.1" 200 -
+[2025-07-07 14:10:20,356] logger - INFO - Detecting intent for input: can you play music of lemon tree
+[2025-07-07 14:10:21,241] httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-07-07 14:10:21,250] logger - INFO - Handling music request: can you play music of lemon tree
+[2025-07-07 14:10:21,250] logger - INFO - Refining music query for input: can you play music of lemon tree
+[2025-07-07 14:10:21,792] httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-07-07 14:10:21,793] logger - INFO - Refined query: Lemon Tree
+[2025-07-07 14:10:21,793] logger - INFO - No music is currently playing to stop.
+[2025-07-07 14:10:21,793] logger - INFO - Fetching and attempting to play music for query: Lemon Tree
+[2025-07-07 14:10:28,561] logger - INFO - Found music: Fools Garden - Lemon Tree (Official HD Video) - URL: https://rr2---sn-npupj5cax-jj0z.googlevideo.com/videoplayback?expire=1751899225&ei=-YdraISmLt6RssUP_KKu6Qw&ip=103.70.211.48&id=o-AOH07sZBs-iWXc0BuGi7QSp7UdWJQ2JOMo6IQ6KSqwBn&itag=251&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&met=1751877625%2C&mh=VR&mm=31%2C29&mn=sn-npupj5cax-jj0z%2Csn-qxaeenl6&ms=au%2Crdu&mv=m&mvi=2&pl=24&rms=au%2Cau&initcwndbps=1291250&bui=AY1jyLN7QCEBa_A4_G2RMeN3OnxkA0aYNiPe3v_TmGFM_86sExjJzXl5oCboZUcb5B0iveVCSa-5rETG&vprv=1&svpuc=1&mime=audio%2Fwebm&ns=evRWkFeBNCjztVk8QOcceRoQ&rqh=1&gir=yes&clen=3218335&dur=191.661&lmt=1726266372335204&mt=1751877182&fvip=3&keepalive=yes&lmw=1&fexp=51476174&c=TVHTML5&sefc=1&txp=5532434&n=HvFTuRTHaD1T2Q&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cvprv%2Csvpuc%2Cmime%2Cns%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&lsparams=met%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRQIhAO7tyqXOrQm82767zFH7Im-fagdFq9jGQPGRSbAfLtURAiATbMlOvsglHMMfNdDUKTdxs0qGGDS4t7stamCJL-IG1w%3D%3D&sig=AJfQdSswRAIgaMFOljOqsgp0W92BVVKudriasAMQTS0fdFcaiLu1ACgCIANkq_FHL3a54SCWQDOMn-D1LDYw1DeSG8a2Xbe8RkVj
+[2025-07-07 14:10:28,561] logger - INFO - No music is currently playing to stop.
+[2025-07-07 14:10:28,566] logger - INFO - Now playing: Fools Garden - Lemon Tree (Official HD Video)
+[2025-07-07 14:10:28,569] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:10:28] "POST /process_input HTTP/1.1" 200 -
+[2025-07-07 14:10:35,697] logger - INFO - Handling music request: interrupt
+[2025-07-07 14:10:35,698] logger - INFO - Stopping the currently playing music.
+[2025-07-07 14:10:35,726] logger - INFO - Music playback interrupted.
+[2025-07-07 14:10:35,727] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:10:35] "POST /interrupt HTTP/1.1" 200 -
+[2025-07-07 14:18:35,863] logger - INFO - Handling music request: tell me the weather in Delhi
+[2025-07-07 14:18:35,863] logger - INFO - Refining music query for input: tell me the weather in Delhi
+[2025-07-07 14:18:36,456] httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-07-07 14:18:36,457] logger - INFO - Refined query: Query:
+[2025-07-07 14:18:36,458] logger - INFO - No music is currently playing to stop.
+[2025-07-07 14:18:36,458] logger - INFO - Fetching and attempting to play music for query: Query:
+[2025-07-07 14:18:43,194] logger - INFO - Found music: How to use Microsoft Power Query - URL: https://rr5---sn-npupj5cax-jj0z.googlevideo.com/videoplayback?expire=1751899720&ei=6IlraMaABvimz7sP3bqsmA4&ip=103.70.211.48&id=o-ADlCI7laFkrZiF_3B1WQJa4pwDi4sxExiFkHdrpwQeMu&itag=251&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&met=1751878120%2C&mh=mL&mm=31%2C29&mn=sn-npupj5cax-jj0z%2Csn-qxaelnes&ms=au%2Crdu&mv=m&mvi=5&pl=24&rms=au%2Cau&initcwndbps=1315000&bui=AY1jyLM0m8R3AAY2PeaG33GyV2tnOXxtO1DPCZ7ayMqtvHlNECRk7jRs-Lq4kyLksk98KEWmFUZdcjkG&vprv=1&svpuc=1&mime=audio%2Fwebm&ns=yk9hFEdWbiKjklRsdfjP5e0Q&rqh=1&gir=yes&clen=16278130&dur=994.201&lmt=1741595934734630&mt=1751877661&fvip=4&keepalive=yes&lmw=1&c=TVHTML5&sefc=1&txp=5532534&n=GqVq1yQXsyq3vQ&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cvprv%2Csvpuc%2Cmime%2Cns%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AJfQdSswRQIgEOzR9iDvo9S3dUbOZjMUx--IGIPHcZShiOUscsfCcRMCIQDbbIeXIosxO1tyzMyED0ei6eOQlWsB8PV9xHGl20vEtg%3D%3D&lsparams=met%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRgIhAPwSidiPc6ULPGxRMxDOBftrhmBj-TWo9mtZfBCpn7ghAiEA8iiom7fn3p5BGuC4l1ybspvZ4MLyaalGPkn521HdcVY%3D
+[2025-07-07 14:18:43,194] logger - INFO - No music is currently playing to stop.
+[2025-07-07 14:18:43,202] logger - INFO - Now playing: How to use Microsoft Power Query
+[2025-07-07 14:18:43,205] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:18:43] "POST /process_input HTTP/1.1" 200 -
+[2025-07-07 14:18:49,732] logger - INFO - Stopping the currently playing music.
+[2025-07-07 14:18:49,781] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:18:49] "POST /exit HTTP/1.1" 200 -
+[2025-07-07 14:18:59,956] logger - INFO - Detecting intent for input: what is the weather in Delhi
+[2025-07-07 14:19:00,554] httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-07-07 14:19:00,559] logger - INFO - Handling weather query: what is the weather in Delhi
+[2025-07-07 14:19:01,046] httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-07-07 14:19:01,048] logger - INFO - Extracted location: Delhi
+[2025-07-07 14:19:02,519] logger - INFO - Weather fetched successfully for Delhi: The current weather in Delhi is Thunderstorm with a temperature of 30.5°C (hot) and a windspeed of 2.0 km/h.
+[2025-07-07 14:19:02,519] logger - INFO - Weather response: The current weather in Delhi is Thunderstorm with a temperature of 30.5°C (hot) and a windspeed of 2.0 km/h.
+[2025-07-07 14:19:02,519] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:19:02] "POST /process_input HTTP/1.1" 200 -
+[2025-07-07 14:19:10,994] logger - INFO - No music is currently playing to stop.
+[2025-07-07 14:19:10,995] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:19:10] "POST /exit HTTP/1.1" 200 -
+[2025-07-07 14:24:01,619] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:24:01] "GET /assistant HTTP/1.1" 200 -
+[2025-07-07 14:24:01,635] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:24:01] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2025-07-07 14:24:02,316] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:24:02] "POST /start HTTP/1.1" 200 -
+[2025-07-07 14:29:16,233] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:29:16] "GET /assistant HTTP/1.1" 200 -
+[2025-07-07 14:29:16,245] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:29:16] "POST /start HTTP/1.1" 200 -
+[2025-07-07 14:29:38,931] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:29:38] "GET /assistant HTTP/1.1" 200 -
+[2025-07-07 14:29:38,947] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:29:38] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2025-07-07 14:29:38,953] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:29:38] "POST /start HTTP/1.1" 200 -
+[2025-07-07 14:29:46,595] logger - INFO - Detecting intent for input: hi can you tell me
+[2025-07-07 14:29:47,209] httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-07-07 14:29:47,212] logger - INFO - Received user query: hi can you tell me
+[2025-07-07 14:29:48,025] httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-07-07 14:29:48,027] logger - INFO - Response generated: I'd be happy to help you understand what data science is!
+
+**What is Data Science?**
+
+Data science is a field that combines statistics, computer science, and domain expertise to extract insights and knowledge from large datasets. It involves using various techniques, such as machine learning, data visualization, and statistical modeling, to uncover patterns, trends, and correlations within data.
+
+Data scientists work with data to answer complex questions, solve problems, and make informed decisions. They use programming languages like Python, R, and SQL to collect, clean, and analyze data, and then communicate their findings to stakeholders through reports, visualizations, and presentations.
+
+**Key Aspects of Data Science:**
+
+1. **Data Collection**: Gathering data from various sources, such as databases, sensors, or surveys.
+2. **Data Cleaning**: Ensuring the data is accurate, complete, and free of errors.
+3. **Data Analysis**: Using statistical and machine learning techniques to uncover insights and patterns.
+4. **Data Visualization**: Presenting complex data in a clear and meaningful way using charts, graphs, and other visualizations.
+5. **Communication**: Sharing findings and insights with stakeholders through reports, presentations, and discussions.
+
+**Applications of Data Science:**
+
+Data science is used in many fields, including:
+
+1. **Business**: To improve customer relationships, optimize operations, and drive revenue growth.
+2. **Healthcare**: To develop personalized medicine, improve patient outcomes, and reduce costs.
+3. **Finance**: To predict market trends, optimize investment portfolios, and detect fraud.
+4. **Environment**: To monitor climate change, track natural disasters, and develop sustainable solutions.
+
+Would you like me to explain any specific aspect of data science in more detail?
+[2025-07-07 14:29:48,028] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:29:48] "POST /process_input HTTP/1.1" 200 -
+[2025-07-07 14:29:54,870] logger - INFO - No music is currently playing to stop.
+[2025-07-07 14:29:54,870] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:29:54] "POST /exit HTTP/1.1" 200 -
+[2025-07-07 14:29:58,723] logger - INFO - No music is currently playing to stop.
+[2025-07-07 14:29:58,723] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:29:58] "POST /stop HTTP/1.1" 200 -
+[2025-07-07 14:30:04,275] logger - INFO - Handling music request: interrupt
+[2025-07-07 14:30:04,275] logger - INFO - No music is currently playing to stop.
+[2025-07-07 14:30:04,275] logger - INFO - Music playback interrupted.
+[2025-07-07 14:30:04,276] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:30:04] "POST /interrupt HTTP/1.1" 200 -
+[2025-07-07 14:30:10,225] logger - INFO - Detecting intent for input: hi what is the weather in Delhi
+[2025-07-07 14:30:10,878] httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-07-07 14:30:10,881] logger - INFO - Handling weather query: hi what is the weather in Delhi
+[2025-07-07 14:30:11,351] httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-07-07 14:30:11,354] logger - INFO - Extracted location: Delhi
+[2025-07-07 14:30:13,003] logger - INFO - Weather fetched successfully for Delhi: The current weather in Delhi is Rain showers with a temperature of 30.5°C (hot) and a windspeed of 1.6 km/h.
+[2025-07-07 14:30:13,004] logger - INFO - Weather response: The current weather in Delhi is Rain showers with a temperature of 30.5°C (hot) and a windspeed of 1.6 km/h.
+[2025-07-07 14:30:13,005] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:30:13] "POST /process_input HTTP/1.1" 200 -
+[2025-07-07 14:30:21,375] logger - INFO - Handling music request: interrupt
+[2025-07-07 14:30:21,375] logger - INFO - No music is currently playing to stop.
+[2025-07-07 14:30:21,375] logger - INFO - Music playback interrupted.
+[2025-07-07 14:30:21,376] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:30:21] "POST /interrupt HTTP/1.1" 200 -
+[2025-07-07 14:30:26,124] logger - INFO - Handling weather query: can you play music of lemon tree
+[2025-07-07 14:30:26,680] httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-07-07 14:30:26,682] logger - INFO - Extracted location: Location:
+[2025-07-07 14:30:27,284] logger - WARNING - No weather details found for location: Location:
+[2025-07-07 14:30:27,285] logger - INFO - Weather response: Sorry, I couldn't find weather details for 'Location:'. Please try the same or another location.
+[2025-07-07 14:30:27,285] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:30:27] "POST /process_input HTTP/1.1" 200 -
+[2025-07-07 14:30:30,526] logger - INFO - No music is currently playing to stop.
+[2025-07-07 14:30:30,527] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:30:30] "POST /exit HTTP/1.1" 200 -
+[2025-07-07 14:30:38,269] logger - INFO - Detecting intent for input: the current functionality
+[2025-07-07 14:30:38,976] httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-07-07 14:30:38,980] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:30:38] "POST /process_input HTTP/1.1" 200 -
+[2025-07-07 14:30:44,674] logger - INFO - Handling music request: interrupt
+[2025-07-07 14:30:44,674] logger - INFO - No music is currently playing to stop.
+[2025-07-07 14:30:44,674] logger - INFO - Music playback interrupted.
+[2025-07-07 14:30:44,675] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:30:44] "POST /interrupt HTTP/1.1" 200 -
+[2025-07-07 14:30:44,871] logger - INFO - Detecting intent for input: I couldn't understand that
+[2025-07-07 14:30:45,417] httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-07-07 14:30:45,421] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:30:45] "POST /process_input HTTP/1.1" 200 -
+[2025-07-07 14:30:52,402] logger - INFO - No music is currently playing to stop.
+[2025-07-07 14:30:52,403] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:30:52] "POST /exit HTTP/1.1" 200 -
+[2025-07-07 14:31:00,879] logger - INFO - Detecting intent for input: can you play music of lemon tree
+[2025-07-07 14:31:01,508] httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-07-07 14:31:01,510] logger - INFO - Handling music request: can you play music of lemon tree
+[2025-07-07 14:31:01,510] logger - INFO - Refining music query for input: can you play music of lemon tree
+[2025-07-07 14:31:02,072] httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-07-07 14:31:02,075] logger - INFO - Refined query: Lemon Tree
+[2025-07-07 14:31:02,075] logger - INFO - No music is currently playing to stop.
+[2025-07-07 14:31:02,075] logger - INFO - Fetching and attempting to play music for query: Lemon Tree
+[2025-07-07 14:31:09,703] logger - INFO - Found music: Fools Garden - Lemon Tree (Official HD Video) - URL: https://rr2---sn-npupj5cax-jj0z.googlevideo.com/videoplayback?expire=1751900466&ei=0oxraKzXF7mT4t4P_rTfgQc&ip=103.70.211.48&id=o-AG43r3rqZ8kXPi38V1E37mn7-ixSypLcm-dpruAwm0be&itag=251&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&met=1751878866%2C&mh=VR&mm=31%2C29&mn=sn-npupj5cax-jj0z%2Csn-qxaeenl6&ms=au%2Crdu&mv=m&mvi=2&pl=24&rms=au%2Cau&initcwndbps=1310000&bui=AY1jyLOlImXR7YZKlmcX_Lh1C7hSnWvAIyKkUM-zo0tyfV8taXzlouiMJwUA5IYzkjqw9yWv9WoiLL1w&vprv=1&svpuc=1&mime=audio%2Fwebm&ns=puHfbPLRNygeLaccaSiEmsAQ&rqh=1&gir=yes&clen=3218335&dur=191.661&lmt=1726266372335204&mt=1751878387&fvip=3&keepalive=yes&lmw=1&c=TVHTML5&sefc=1&txp=5532434&n=gTzlolgCNY1zRg&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cvprv%2Csvpuc%2Cmime%2Cns%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&lsparams=met%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRgIhAOms3_N6CQ5uKX_P0YkOB-a55ayABRLAbUPk4pT5tw-EAiEAtVVz9Mrsq6aqcPrwIaGoZ4v9o9Nfr4DIzRSCoKxOhVI%3D&sig=AJfQdSswRQIhAJqvunU6dm3CTg0xkNcbd4WZIUpoQCBDYVXd0wbsieoCAiAVcF7_w5dKYUWePM34_Iek_GiMpcbNS8faQogxka0s7A%3D%3D
+[2025-07-07 14:31:09,705] logger - INFO - No music is currently playing to stop.
+[2025-07-07 14:31:09,714] logger - INFO - Now playing: Fools Garden - Lemon Tree (Official HD Video)
+[2025-07-07 14:31:09,717] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:31:09] "POST /process_input HTTP/1.1" 200 -
+[2025-07-07 14:31:15,987] logger - INFO - Stopping the currently playing music.
+[2025-07-07 14:31:16,015] werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 14:31:16] "POST /exit HTTP/1.1" 200 -
