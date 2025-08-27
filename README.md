@@ -27,10 +27,10 @@ The assistant integrates **Flask** for the backend and a robust **chat-based UI*
 
 #### Setup Instructions
 
-1. Create and activate a conda environment:
+1. Create and activate a virtual environment:
    ```bash
-   conda create -p ./env python==3.11 -y
-   conda activate ./env  # On Windows: venv\Scripts\activate
+   python -m venv myenv
+ .\myenv\Scripts\Activate.ps1
    ```
 
 3. Install dependencies:
