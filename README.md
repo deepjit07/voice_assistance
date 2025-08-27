@@ -30,7 +30,7 @@ The assistant integrates **Flask** for the backend and a robust **chat-based UI*
 1. Create and activate a virtual environment:
    ```bash
    python -m venv myenv
- .\myenv\Scripts\Activate.ps1
+  .\myenv\Scripts\Activate.ps1
    ```
 
 3. Install dependencies:
